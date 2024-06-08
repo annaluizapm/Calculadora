@@ -1,0 +1,71 @@
+/* estilos gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    background-color: #fff;
+}
+
+/* contêiner da calculadora */
+.calculadora {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+/* display da calculadora */
+.display {
+    background-color: #000;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* contêiner dos botões */
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 5px;
+}
+
+/* botões gerais */
+.button {
+    background-color: #505050;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+}
+
+/* botões cinza claro */
+.cinzaclaro {
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+/* botões laranja */
+.laranja {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+/* botão de igual ocupando três linhas */
+#triple {
+    grid-row: span 3;
+    border-radius: 50px;
+}
+
+/* botão zero ocupando duas colunas */
+#double {
+    grid-column: span 2;
+    border-radius: 50px;
+}
